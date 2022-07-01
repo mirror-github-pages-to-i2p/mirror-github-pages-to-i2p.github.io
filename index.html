@@ -7,5 +7,20 @@
 <body>
 <h1 id="how-to-mirror-github-pages-to-i2p-without-hosting-them-locally">How to Mirror Github Pages to I2P Without Hosting them Locally</h1>
 <p>Example and Tutorial for mirroring a Github Pages site directly onto I2P</p>
+<ol type="1">
+<li>First, go to the <a href="http://127.0.0.1:7657/i2ptunnel">Hidden Services Manager at http://127.0.0.1:7657/i2ptunnel</a>.</li>
+<li>Scroll down to the “New Hidden Service” button and select “HTTP Service”</li>
+</ol>
+<ul>
+<li><img src="HTTPService.png" title="fig:" alt="Set up an HTTP Service" /></li>
+</ul>
+<ol start="2" type="1">
+<li>When setting up your Hidden Service, enter the settings as follows:</li>
+</ol>
+<ul>
+<li>Both <code>Target Host</code> and <code>Website Hostname</code> should match the clearnet hostname of the site you are mirroring</li>
+<li>Both <code>Use SSL to connect to target</code> and <code>Automatically Start Tunnel when Router Starts</code> are set to true.</li>
+<li>Example: <img src="HTTPService-Hostname-Settings.png" alt="Example Hostname Settings" /></li>
+</ul>
 </body>
 </html>
