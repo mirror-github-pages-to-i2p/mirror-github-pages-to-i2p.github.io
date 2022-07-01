@@ -9,7 +9,9 @@ forward it into I2P. While most I2P services are probably hosted on the same dev
 as the I2P router, this is not always necessarily the case. The Hidden Services Manager
 can also forward sites that are not co-located on the same device. Since Github pages
 do not allow users to log in, mirroring a Github page to I2P in this way should always
-be safe.
+be safe to the users of your site. In this example, your I2P host is **not anonymous to**
+**github** or anyone who can observe your connection to github and send you traffic they
+can identify on the outgoing side.
 
 This guide assumes you are using the Java version of the I2P router. I don't know how to
 do it with `i2pd` yet.
