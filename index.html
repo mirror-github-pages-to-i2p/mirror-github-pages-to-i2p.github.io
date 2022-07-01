@@ -6,7 +6,10 @@
 </head>
 <body>
 <h1 id="how-to-mirror-github-pages-to-i2p-without-hosting-them-locally">How to Mirror Github Pages to I2P Without Hosting them Locally</h1>
-<p>Example and Tutorial for mirroring a Github Pages site directly onto I2P</p>
+<h2 id="introduction">Introduction</h2>
+<p>It is fairly straightforward for anyone who has a personal or organizational github page to make that content available to I2P by setting up their local I2P router to forward it into I2P. While most I2P services are probably hosted on the same device as the I2P router, this is not always necessarily the case. The Hidden Services Manager can also forward sites that are not co-located on the same device. Since Github pages do not allow users to log in, mirroring a Github page to I2P in this way should always be safe.</p>
+<p>This guide assumes you are using the Java version of the I2P router. I don’t know how to do it with <code>i2pd</code> yet.</p>
+<h2 id="steps">Steps</h2>
 <ol type="1">
 <li>First, go to the <a href="http://127.0.0.1:7657/i2ptunnel">Hidden Services Manager at http://127.0.0.1:7657/i2ptunnel</a>.</li>
 <li>Scroll down to the “New Hidden Service” button and select “HTTP Service”</li>
@@ -22,5 +25,7 @@
 <li>Both <code>Use SSL to connect to target</code> and <code>Automatically Start Tunnel when Router Starts</code> are set to true.</li>
 <li>Example: <img src="HTTPService-Hostname-Settings.png" alt="Example Hostname Settings" /></li>
 </ul>
+<h2 id="followup-clearnet-sites-requiring-login-credentials">Followup: Clearnet Sites requiring Login Credentials</h2>
+<p>If you want to try this with a non-Github Pages host, note that you should only do this for services where you at least control a domain or subdomain, and which do not depend on a login to a clearnet service which you do not own. Users should not trust these gateways enough to log into them with their clear-net credentials, unless they are also operated by the organization operating the serivice. For instance, i2pgit.org is a clearnet mirror of git.idk.i2p. Both are operated by me so it does not matter which gateway you choose. For other sites, this may not be the case, and so these are excellent view-only gateways and blog hosts. They are not useful as a way of mirroring Reddit to I2P or something like that.</p>
 </body>
 </html>
